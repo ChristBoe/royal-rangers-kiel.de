@@ -14,5 +14,7 @@
 	</div>
 	</div>
 
+	<?php include_once 'inc/maps.php'; ?>
+
 </body>
 </html>
