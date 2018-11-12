@@ -3,7 +3,7 @@
 <head>
 	<title>Royal Rangers Kiel</title>
 	<link rel="icon" type="img/png" href="icon.png">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bannerstyle.css">
 </head>
 <body>
 	<div id="banner">
