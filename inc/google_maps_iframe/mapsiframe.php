@@ -1,1 +1,0 @@
-<iframe width="600" height="350" src="http://regiohelden.de/google-maps/map.php?width=600&height=350&q=Diesterwegstra%C3%9Fe%2020+24113+%20Kiel"></iframe>
