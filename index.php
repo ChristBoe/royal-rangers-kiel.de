@@ -6,13 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="banner">
-		<img id="logo" src="logo.svg">
-		<div id="willkommen">
-		<h1>Willkommen</h1>
-		<h2>bei den Royal Rangers in Kiel</h2>
-	</div>
-	</div>
+<?php include 'inc/include.php'; ?>
 
 </body>
 </html>
