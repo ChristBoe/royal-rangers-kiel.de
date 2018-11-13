@@ -1,4 +1,4 @@
-# [royal-rangers-kiel.de](https://www.royal-rangers-kiel.de)
+# [royal-rangers-kiel.de](www.royal-rangers-kiel.de)
 
 In this repository we're developing the website of the [Royal Rangers](https://royal-rangers.de) Outpost 104 Kiel (Germany).  
 
