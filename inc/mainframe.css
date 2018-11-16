@@ -1,3 +1,7 @@
+*{
+    font-family: Arial;
+}
+
 .mainframe {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -6,7 +10,6 @@
 }
 
 #text {
-	font-family: Arial;
 	font-size: 20px;
     /*display: flex;*/
     width: 50%;
@@ -24,4 +27,8 @@
     width: 30%;
     background: #000;
 
+}
+
+#location {
+    background: #444;
 }
