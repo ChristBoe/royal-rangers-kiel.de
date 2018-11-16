@@ -1,0 +1,25 @@
+<!-- see https://stackoverflow.com/a/37533953/3216883 -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.js"></script>
+<script>
+  function arrayToTable(tableData) {
+    var table = $('<table></table>');
+  	$(tableData).each(function (i, rowData) {
+    	var row = $('<tr></tr>');
+    	$(rowData).each(function (j, cellData) {
+      	row.append($('<td>'+cellData+'</td>'));
+    	});
+    	table.append(row);
+  	});
+  	return table;
+	}
+
+  $.ajax({
+    type: "GET",
+    url: "teams_and_leaders.csv",
+    success: function (data) {
+			$('body').append(arrayToTable($.csv.toArrays(data)));
+    }
+  });
+</script>
