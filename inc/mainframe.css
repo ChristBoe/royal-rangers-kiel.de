@@ -1,3 +1,24 @@
 .mainframe {
-	height: 500px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#text {
+	font-family: Arial;
+	font-size: 20px;
+    display: inline-flex;
+    width: 50%;
+}
+
+#textnews {
+	background: #5a6839;
+    
+}
+
+#news {
+    display: inline-flex;
+    width: 30%;
+    background: #000;
 }
