@@ -1,16 +1,24 @@
 <!-- see https://stackoverflow.com/a/37533953/3216883 -->
 
+<head>
+		<link rel="stylesheet" type="text/css" href="teamscript.css">
+</head>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <script>
-  function arrayToTable(tableData) {
-    var table = $('<table></table>');
+  function arrayToCards(tableData) {
+    var table = $('<div class="col-xs-6 col-sm-2"></div>');
   	$(tableData).each(function (i, rowData) {
-    	var row = $('<tr></tr>');
+    	var card = $('<div class="card"></div>');
+			var cardcontent = $('<div class="card-content"></div>');
     	$(rowData).each(function (j, cellData) {
-      	row.append($('<td>'+cellData+'</td>'));
+      	cardcontent.append($('<p>'+cellData+'</p>'));
     	});
-    	table.append(row);
+			card.append(cardcontent)
+    	table.append(card);
   	});
   	return table;
 	}
@@ -19,7 +27,7 @@
     type: "GET",
     url: "teams_and_leaders.csv",
     success: function (data) {
-			$('body').append(arrayToTable($.csv.toArrays(data)));
+			$('body').append(arrayToCards($.csv.toArrays(data)));
     }
   });
 </script>
