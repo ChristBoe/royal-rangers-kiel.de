@@ -1,33 +1,35 @@
 <!-- see https://stackoverflow.com/a/37533953/3216883 -->
 
 <head>
-		<link rel="stylesheet" type="text/css" href="teamscript.css">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script>
   function arrayToCards(tableData) {
-    var table = $('<div class="col-xs-6 col-sm-2"></div>');
+		var carddeck = $('<div class="card-deck"></div>');
   	$(tableData).each(function (i, rowData) {
     	var card = $('<div class="card"></div>');
-			var cardcontent = $('<div class="card-content"></div>');
+			var cardbody = $('<div class="card-body"></div>');
     	$(rowData).each(function (j, cellData) {
-      	cardcontent.append($('<p>'+cellData+'</p>'));
+      	cardbody.append($('<p class="card-text">'+cellData+'</p>'));
     	});
-			card.append(cardcontent)
-    	table.append(card);
+    	card.append(cardbody);
+			carddeck.append(card);
   	});
-  	return table;
+  	return carddeck;
 	}
+
+	var result = $('<div class="container-fluid"><div>');
 
   $.ajax({
     type: "GET",
     url: "teams_and_leaders.csv",
     success: function (data) {
-			$('body').append(arrayToCards($.csv.toArrays(data)));
+			$('body').append(result.append(arrayToCards($.csv.toArrays(data))));
     }
   });
 </script>
