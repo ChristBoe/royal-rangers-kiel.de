@@ -27,7 +27,7 @@
 
   $.ajax({
     type: "GET",
-    url: "teams_and_leaders.csv",
+    url: "https://raw.githubusercontent.com/RR104/royal-rangers-kiel.de/master/data/teams_and_leaders.csv",
     success: function (data) {
 			$('body').append(result.append(arrayToCards($.csv.toArrays(data))));
     }
