@@ -15,7 +15,6 @@ body {
 	background-position: center;
 	margin: 0px;
 	height: 20vh;
-	display: flex;
 }
 
 #banner *{
@@ -24,7 +23,6 @@ body {
 
 #banner #logo{
 	float: left;
-	clear: both;
 }
 
 #banner #willkommen {
@@ -43,9 +41,9 @@ body {
 
 #banner #willkommen h2{
 	margin-top: 0px;
-	font-size: 7vmin;
+	font-size: 7vh;
 }
 
 #logo {
-	height: 20vmin;
+	height: 20vh;
 }
