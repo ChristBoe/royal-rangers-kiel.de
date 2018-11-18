@@ -3,11 +3,29 @@ function arrayToCards(tableData) {
 	// ignore title row
 	tableData.shift();  	
 	$(tableData).each(function (i, rowData) {
+
+		// prepare card
   	var card = $('<div class="card"></div>');
-		var cardbody = $('<div class="card-body"></div>');
-  	$(rowData).each(function (j, cellData) {
-    	cardbody.append($('<p class="card-text">'+cellData+'</p>'));
-  	});
+
+		// team image
+		var team_image = $('<img class="card-img-top" src="' + rowData[4] + '" alt="Team Animal Foto from Wikipedia"></div>'); 
+		card.append(team_image);
+
+		// prepare card body
+		var cardbody = $('<div class="card-body"></div>');		
+
+		// team name
+		var team_name = $('<h5 class="card-title">' + rowData[0] + '</h5>');
+		cardbody.append(team_name);
+		
+		// team leaders
+		var team_leaders = $('<p><b>Teamleiter:</b> ' + rowData[1] + '</p>');
+		cardbody.append(team_leaders);
+
+		// age class
+		var age_class = $('<p><b>Royal Rangers Altersgruppe: </b> ' + rowData[2] + '</p>');
+		cardbody.append(age_class);
+
   	card.append(cardbody);
 		carddeck.append(card);
 	});
