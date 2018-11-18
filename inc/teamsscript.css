@@ -3,3 +3,10 @@
     height: 15vw;
     object-fit: cover;
 }
+
+.card-img-overlay {
+	color: white;
+	text-align: right;
+	font-size: 11px;
+	padding: 4px;
+}
