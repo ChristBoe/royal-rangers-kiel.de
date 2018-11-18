@@ -12,7 +12,7 @@ function arrayToCards(tableData) {
 		card.append(team_image);
 
 		// image overlay
-		var image_copyright = $('<div class="card-img-overlay">&copy; ' + rowData[5] + '</div>')
+		var image_copyright = $('<div class="card-img-overlay"><a href="' + rowData[6] + '">&copy; ' + rowData[5] + '</a></div>')
 		card.append(image_copyright);
 
 		// prepare card body
@@ -27,7 +27,7 @@ function arrayToCards(tableData) {
 		cardbody.append(team_leaders);
 
 		// age class
-		var age_class = $('<p><b>Royal Rangers Altersgruppe: </b> ' + rowData[2] + '</p>');
+		var age_class = $('<p><b>Altersgruppe: </b> ' + rowData[2] + '</p>');
 		cardbody.append(age_class);
 
   	card.append(cardbody);
