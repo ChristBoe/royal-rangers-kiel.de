@@ -65,22 +65,29 @@
 		<script src="inc/teamsscript.js"></script>
 	</div>
     
-    
-    <div class="mainframe" id="location">
-    	<div class="tabswitch" id="buttons">
-    		<button class="tablinks" onclick="switchtohassee()">Hassee</button>
-    		<button class="tablinks" onclick="switchtoeh()">Elmschenhagen</button>
-    	</div>
+	    <div class="mainframe" id="location">
+	    	
+		    	<div id="mapsbuttons">
+		    		<button class="mapsswitch" id="tablinkshassee" style="background: #aaa;" onclick="switchtohassee()">Hassee</button>
+		    		<button class="mapsswitch" id="tablinkseh" style="background: #e0e0e0;" onclick="switchtoeh()">Elmschenhagen</button>
 
-    	<div class="maps" id="hassee">
-			<object id="outermapsiframe" data="inc/mapshassee.html"></object>
-		</div>
+		    		
+		    	</div>
 
-		<div class="maps" style="display: none;" id="elmschenhagen">
-			<object id="outermapsiframe" data="inc/mapselmschenhagen.html"></object>
-		</div>
-    </div>
-    
+		    	<div class="maps" id="hassee">
+					<object id="outermapsiframe" data="inc/mapshassee.html"></object>
+				</div>
+
+				<div class="maps" style="display: none;" id="elmschenhagen">
+					<object id="outermapsiframe" data="inc/mapselmschenhagen.html"></object>
+				</div>
+			
+
+			<div id="calendar" class="col-md-4">
+	    			<object data="inc/googlecal.html"></object>
+	    		</div>
+	    </div>
+
     <div class="mainframe" id="personal_data">
         <p>Impressun etc.</p>
     </div>
@@ -89,15 +96,27 @@
 <script type="text/javascript">
 	function switchtohassee()
 	{
+		document.getElementById('tablinkshassee').style.outline = 'none';
 		document.getElementById('elmschenhagen').style.display = 'none';
 		document.getElementById('hassee').style.display = 'block';
+		document.getElementById('tablinkshassee').style.background = '#aaa';
+		document.getElementById('tablinkseh').style.background = '#e0e0e0';
+		document.getElementById('tablinkshassee').style.borderStyle = "inset";
+		document.getElementById('tablinkseh').style.borderStyle = "none";
 	}
 
 	function switchtoeh()
 	{
+		document.getElementById('tablinkseh').style.outline = 'none';
 		document.getElementById('hassee').style.display = 'none';
 		document.getElementById('elmschenhagen').style.display = 'block';
+		document.getElementById('tablinkseh').style.background = '#aaa';
+		document.getElementById('tablinkshassee').style.background = '#e0e0e0';
+		document.getElementById('tablinkshassee').style.borderStyle = "none";
+		document.getElementById('tablinkseh').style.borderStyle = "inset";
 	}
+
+	switchtohassee();
 </script>
 
 
