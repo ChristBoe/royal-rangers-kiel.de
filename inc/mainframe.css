@@ -26,6 +26,18 @@
 	width: 100%;
 }
 
+#news iframe {
+	background: #ffffff;
+}
+
 #location {
-    background: #444;
+  background: #444;
+}
+
+a {
+	color: #FFE400;
+}
+
+a:hover {
+	color: #fff;
 }
