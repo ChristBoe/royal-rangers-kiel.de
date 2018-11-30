@@ -45,11 +45,39 @@
     
     
     <div class="mainframe" id="location">
-	<object id="outermapsiframe" data="inc/maps.html"></object>
-        </div>
+    	<div class="tabswitch" id="buttons">
+    		<button class="tablinks" onclick="switchtohassee()">Hassee</button>
+    		<button class="tablinks" onclick="switchtoeh()">Elmschenhagen</button>
+    	</div>
+
+    	<div class="maps" id="hassee">
+			<object id="outermapsiframe" data="inc/mapshassee.html"></object>
+		</div>
+
+		<div class="maps" style="display: none;" id="elmschenhagen">
+			<object id="outermapsiframe" data="inc/mapselmschenhagen.html"></object>
+		</div>
+    </div>
     
     <div class="mainframe" id="personal_data">
         <p>Impressun etc.</p>
     </div>
 </body>
+
+<script type="text/javascript">
+	function switchtohassee()
+	{
+		document.getElementById('elmschenhagen').style.display = 'none';
+		document.getElementById('hassee').style.display = 'block';
+	}
+
+	function switchtoeh()
+	{
+		document.getElementById('hassee').style.display = 'none';
+		document.getElementById('elmschenhagen').style.display = 'block';
+	}
+</script>
+
+
+
 </html>
