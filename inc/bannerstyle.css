@@ -14,7 +14,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	margin: 0px;
-	height: 20vh;
+	height: 30vh;
 	display: flex;
 }
 
@@ -28,24 +28,26 @@ body {
 }
 
 #banner #willkommen {
-	font-family: Arial;
+	font-family: Georgia;
 }
 
 #willkommen *{
 	display: block;
-	color: #db000b;
+	color: #FFE400;
+	text-shadow: 3px 3px #000000;
 }
 
 #banner #willkommen h1{
 	margin-bottom: 1%;
-	font-size: 8vh;
+	font-size: 15vmin;
 }
 
 #banner #willkommen h2{
 	margin-top: 0px;
 	font-size: 7vmin;
+	white-space: nowrap
 }
 
 #logo {
-	height: 20vmin;
+	height: 30vmin;
 }
