@@ -66,27 +66,30 @@
 	</div>
     
 	    <div class="mainframe" id="location">
+
 	    	
 		    	<div id="mapsbuttons">
 		    		<button class="mapsswitch" id="tablinkshassee" style="background: #aaa;" onclick="switchtohassee()">Hassee</button>
 		    		<button class="mapsswitch" id="tablinkseh" style="background: #e0e0e0;" onclick="switchtoeh()">Elmschenhagen</button>
-
-		    		
 		    	</div>
 
+		    	<div class="row">
+		    		<div class="col-md-8">
 		    	<div class="maps" id="hassee">
 					<object id="outermapsiframe" data="inc/mapshassee.html"></object>
-				</div>
+				</div></div>
 
 				<div class="maps" style="display: none;" id="elmschenhagen">
 					<object id="outermapsiframe" data="inc/mapselmschenhagen.html"></object>
 				</div>
+				
 			
-
-			<div id="calendar" class="col-md-4">
-	    			<object data="inc/googlecal.html"></object>
-	    		</div>
+				<div class="col-md-4">
+			<div id="calendar" style="height: 80vh;">
+	    			<object height="95%" width="100%" data="inc/googlecal.html"></object>
+	    		</div></div></div>
 	    </div>
+	    
 
     <div class="mainframe" id="personal_data">
         <p>Impressun etc.</p>
