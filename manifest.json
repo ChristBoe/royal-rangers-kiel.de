@@ -1,0 +1,21 @@
+{
+  "short_name": "RR104",
+  "name": "Royal Rangers Kiel",
+  "icons": [
+    {
+      "src": "https://royal-rangers-kiel.de/logo/192x192.png",
+      "type": "image/png",
+        "sizes" : "192x192"
+    },
+     {
+      "src": "https://royal-rangers-kiel.de/logo/512x512.png",
+      "type": "image/png",
+        "sizes" : "512x512"
+    } 
+      
+  ],
+  "start_url": "/",
+  "background_color": "#5a6839",
+  "display": "standalone",
+  "theme_color": "#5a6839"
+}
