@@ -1,5 +1,6 @@
 function switchtohassee()
 		{
+            
 			document.getElementById('tablinkshassee').style.outline = 'none';
 			document.getElementById('elmschenhagen').style.display = 'none';
 			document.getElementById('hassee').style.display = 'block';
@@ -9,6 +10,7 @@ function switchtohassee()
 			document.getElementById('tablinkseh').style.borderStyle = "none";
 			document.getElementById('tablinkseh').style.cursor = "pointer";
 			document.getElementById('tablinkshassee').style.cursor = "default";
+            return;
 			
 		}
 
@@ -23,6 +25,5 @@ function switchtohassee()
 			document.getElementById('tablinkseh').style.borderStyle = "inset";
 			document.getElementById('tablinkseh').style.cursor = "default";
 			document.getElementById('tablinkshassee').style.cursor = "pointer";
+            return;
 		}
-
-		switchtohassee();

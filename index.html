@@ -16,6 +16,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.js"></script>
         <script src="inc/includehtml.js"></script>
+        <script src="inc/mapsswitch.js"></script>
 
 		<!-- include external stylesheets -->		
 		<link rel="icon" type="img/png" href="https://royal-rangers-kiel.de/logo/icon.png">
@@ -75,8 +76,9 @@
 		<!-- Maps and switch -->
 			<!-- Switch -->
 			    <div id="mapsbuttons">
-			    	<button class="mapsswitch" id="tablinkshassee" style="background: #aaa;" onclick="switchtohassee()">Hassee</button>
-			    	<button class="mapsswitch" id="tablinkseh" style="background: #e0e0e0;" onclick="switchtoeh()">Elmschenhagen</button>
+			    	<button class="mapsswitch" id="tablinkshassee" style="background: #aaa; border-style: inset; cursor: default;" onclick="switchtohassee()">Hassee</button>
+			    	<button class="mapsswitch" id="tablinkseh" style="background: #e0e0e0; border-style: none; cursor: pointer;" onclick="switchtoeh()">Elmschenhagen</button>
+			    	<script>switchtohassee();</script>
 			    </div>
 
 			<!-- Maps -->
@@ -100,14 +102,9 @@
 
 
 	</body>
-
-
-
-	<!-- script for maps switch ------------------------------------------------------------------------------------------------------------------------------------------>
-	<script src="inc/mapsswitch.js"></script>
-	<!-- include html -->
-	<script>includeHTML();</script>
 	
+    
+	<script>includeHTML();</script>
 
 
 

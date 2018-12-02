@@ -20,8 +20,11 @@ function includeHTML() {
         } 
         xhttp.open("GET", file, true);
         xhttp.send();
+          //alert('tst');
         /*exit the function:*/
+        
         return;
+        
       }
     }
   }
