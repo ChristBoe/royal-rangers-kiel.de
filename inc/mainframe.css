@@ -22,11 +22,14 @@
 	color: #ffffff;
 }
 
-#news {
+#twitter {
 	width: 100%;
+	max-height: 800px;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
-#news iframe {
+#twitter iframe {
 	background: #ffffff;
 }
 
