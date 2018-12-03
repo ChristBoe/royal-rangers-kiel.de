@@ -37,17 +37,41 @@ body {
 	text-shadow: 3px 3px #000000;
 }
 
+#logo {
+	height: 30vmin;
+}
+
+/* banner text size */
+
 #banner #willkommen h1{
 	margin-bottom: 1%;
-	font-size: 15vmin;
+	font-size: 6vh;
 }
 
 #banner #willkommen h2{
 	margin-top: 0px;
-	font-size: 7vmin;
-	white-space: nowrap
+	font-size: 3vh;
 }
 
-#logo {
-	height: 30vmin;
+@media (min-width:900px) {
+	#banner #willkommen h1{
+		margin-bottom: 1%;
+		font-size: 10vmin;
+	}
+	#banner #willkommen h2{
+		margin-top: 0px;
+		font-size: 5vmin;
+	}
+}
+
+@media (min-width:1300px) {
+	#banner #willkommen h1{
+		margin-bottom: 1%;
+		font-size: 14vmin;
+	}
+	#banner #willkommen h2{
+		margin-top: 0px;
+		font-size: 7vmin;
+		white-space: nowrap
+	}
 }
