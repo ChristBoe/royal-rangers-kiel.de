@@ -15,6 +15,5 @@ before_script:
   - sudo make install
   - cd ..
 
-script:
-  - ls
-  - find . -type f -not -path "./.git/*" -not -path "./deploy_homepage.sh" -not -path "./.travis.yml" -exec curl -v -u ${FTP_USER}:${FTP_PASSWORD} --ftp-create-dirs -T {} ftp.royal-rangers-kiel.de/new_homepage/{} \;
+after_success:
+  - find . -type f -not -path "./.git/*" -not -path "./deploy_homepage.sh" -not -path "./.travis.yml" -exec curl -v -u ${FTP_USER}:${FTP_PASSWORD} --ftp-create-dirs -T {} ftp.royal-rangers-kiel.de/new_homepage/{}
