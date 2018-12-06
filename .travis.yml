@@ -6,6 +6,15 @@ env:
     - secure: "Zix5tJD0uStp32V2QXU2VgjgPqHCJIoNyqCwuO69IU2PCZTDlS2CCMEucjfzC529Gr3V1BQRmsHSIq30dbvJUsnh97WJGY+0+ChgmOBH02+m2zteJ9y2WtuE4KW2rWHPpo9CahGWcjUWwkQjDaA67cEg+1ApDsvsJmy7AwqwOMrJoTAufgAGjywSDR3CIy6hPpMAIudx6zADJvcM3tqSHFgCDjU0VG6pQLiZuRU4Vu0JVhy3Dj+1Y8JfAX3zUxwBBVVSxFLdDz2igw/ZM5eMCdH6p+HtNA21bW4VWkZm6oTI6NGhtlSalPNOFQxiEQPfPnkqMkWdnVP5RDqPNRSSXqKhUIVCtLKStHf6ixvoQUaqwBtqlLLktuhLv60kT/SkRCLDU+8JTo6ErSdZABHb/fvmxSYNU6Ly7JtZRSwvOSymHluWyP4ZieusO67EnCOFldrjyoV63wKPbpAQghN2YDaoQQkDMszJug1e+U2G8jPmZPnJVD/+3YlbeejE/wH+m4KpxdPFWsgPeE77So8TBWqMxDhYSCA2VvxYpghKFkancz8h8lMUDfCLQHk1dgZQnwywX4gt+6qFJrnR1yBwhZnWTKeEqj9081WZpmmHcKc0Jd0mg+vWzevLP1cDysqJSZpBM1Y4mlfeIn/1kG/vyrwL+8nh45yAEb2fTw/lAgE="
     - secure: "pW14uA7Oa+fBS5hRC4n5YW07k8PrT7e/s83JPOOLZsxK4epfm4P8MGgHVwOq42AZu/wPmoQJyCGx2USXyt9pJsn2PnpM8eCc7P1etwFl66OFcOLApBSGTM41xfutfcbsjK3J9f4jJ772Ac0/7IQpUI+jH58sT6pnQS3l7l7E5PHEy/SFidloOrDaMMj9OysfCBNrBgbfqB8lQUqEHVTvxi2fEKNGnZ2/vq3guNYb+8q5bDsGqdZhh5v1kqHC3RZmNgAfdB9ukKvzQl5weLWqJxOklI3dlhLb8PppkDY3I5PvSZTpbiuXrWfjrFDIDO5V6zYfp/7vXtcP5TwB9PuO6sSBh09DN9GyPU6KMOqK6xFj8QWYud7znzw0zw2GghGHM8QyXSihSjT+oTu9vIDIXHXypO/Qs7rMNmEJv6n4ty/r0d+/hRDrdlp1XZ8fDeJK6BTpk8N8tJ83uC3Oy7lW70/FX7BfM2U53W+nd4UsD10xUll5DfugGHhVFIgpF8Aqnw2K6WlD/ssoRaK67QWAfIU34ii4hqevevbXfvorbAA2rhZWKS5+xc0RdbnR4z5FtvfglE4Bzs1zAkap590w7G39QMfdRc92eaXa0t/qPX/HYU3sFAJt663lyhupmHHQB/EyApmZeaDDQh4P2RPVlqbYYc5K4fdINBEHGwJ9vTM="
 
+before_install:
+  - wget https://curl.haxx.se/download/curl-7.62.0.tar.gz
+  - tar -xvf curl-7.62.0.tar.gz
+  - cd curl-7.62.0/
+  - ./configure
+  - make
+  - sudo make install
+  - cd ..
+
 deploy:
   provider: script
   script: bash deploy_homepage.sh
