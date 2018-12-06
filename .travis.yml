@@ -15,6 +15,10 @@ before_script:
   - sudo make install
   - cd ..
   - chmod +x ./deploy_homepage.sh
+  - pwd
+  - ls
 
 script:
+  - pwd
+  - ls
   - ./deploy_homepage.sh
