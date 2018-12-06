@@ -14,11 +14,7 @@ before_script:
   - make
   - sudo make install
   - cd ..
-  - chmod +x ./deploy_homepage.sh
-  - pwd
-  - ls
 
 script:
-  - pwd
   - ls
-  - ./deploy_homepage.sh
+  - find . -type f -not -path "./.git/*" -not -path "./deploy_homepage.sh" -not -path "./.travis.yml" -exec curl --disable-epsv --retry 5 --retry-connrefused -v -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp.royal-rangers-kiel.de/new_homepage/{} \;
