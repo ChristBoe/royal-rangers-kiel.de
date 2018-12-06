@@ -16,5 +16,5 @@ before_script:
   - cd ..
 
 after_success:
-  - find . -type f -not -path "./.git/*" -not -path "./deploy_homepage.sh" -not -path "./.travis.yml" -not -path "./curl-7.62.0" -not -path "./curl-7.62.0.tar.gz" > files
+  - find . -type f -not -path "./.git/*" -not -path "./deploy_homepage.sh" -not -path "./.travis.yml" -not -path "./curl-7.62.0/*" -not -path "./curl-7.62.0.tar.gz" > files
   - for i in $(cat files) ; do curl --disable-epsv -v -u ${FTP_USER}:${FTP_PASSWORD} --ftp-create-dirs -T $i ftp.royal-rangers-kiel.de/new_homepage/$i ; done
