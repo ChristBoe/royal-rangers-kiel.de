@@ -7,6 +7,7 @@ env:
     - secure: "pW14uA7Oa+fBS5hRC4n5YW07k8PrT7e/s83JPOOLZsxK4epfm4P8MGgHVwOq42AZu/wPmoQJyCGx2USXyt9pJsn2PnpM8eCc7P1etwFl66OFcOLApBSGTM41xfutfcbsjK3J9f4jJ772Ac0/7IQpUI+jH58sT6pnQS3l7l7E5PHEy/SFidloOrDaMMj9OysfCBNrBgbfqB8lQUqEHVTvxi2fEKNGnZ2/vq3guNYb+8q5bDsGqdZhh5v1kqHC3RZmNgAfdB9ukKvzQl5weLWqJxOklI3dlhLb8PppkDY3I5PvSZTpbiuXrWfjrFDIDO5V6zYfp/7vXtcP5TwB9PuO6sSBh09DN9GyPU6KMOqK6xFj8QWYud7znzw0zw2GghGHM8QyXSihSjT+oTu9vIDIXHXypO/Qs7rMNmEJv6n4ty/r0d+/hRDrdlp1XZ8fDeJK6BTpk8N8tJ83uC3Oy7lW70/FX7BfM2U53W+nd4UsD10xUll5DfugGHhVFIgpF8Aqnw2K6WlD/ssoRaK67QWAfIU34ii4hqevevbXfvorbAA2rhZWKS5+xc0RdbnR4z5FtvfglE4Bzs1zAkap590w7G39QMfdRc92eaXa0t/qPX/HYU3sFAJt663lyhupmHHQB/EyApmZeaDDQh4P2RPVlqbYYc5K4fdINBEHGwJ9vTM="
 
 before_script:
+  - sudo apt-get remove --auto-remove curl
   - wget https://curl.haxx.se/download/curl-7.62.0.tar.gz
   - tar -xvf curl-7.62.0.tar.gz
   - cd curl-7.62.0/
