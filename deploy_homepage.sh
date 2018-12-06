@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # copy new version to server
-find . -type f -not -path "./.git/*" -not -path "./deploy_homepage.sh" -not -path "./.travis.yml" -exec curl --disable-epsv --fail-early -v -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp.royal-rangers-kiel.de/new_homepage/{} \;
+find . -type f -not -path "./.git/*" -not -path "./deploy_homepage.sh" -not -path "./.travis.yml" -exec curl --disable-epsv --retry 5 --retry-connrefused -v -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp.royal-rangers-kiel.de/new_homepage/{} \;
