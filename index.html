@@ -24,6 +24,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.js"></script>
         <script src="inc/includehtml.js"></script>
         <script src="inc/mapsswitch.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
 
 		<!-- include external stylesheets -->		
 		<link rel="icon" type="img/png" href="https://royal-rangers-kiel.de/logo/icon.png">
@@ -102,7 +103,7 @@
 		    </div>
 
 
-
+		    <button id="applink" style="display: none;">Zur App für eingefleischte Ranger</button>
 
 	<!-- Personal data ---------------------------------------------------------------------------------------------------------------------------------------------------->
 	    <div class="mainframe" w3-include-html="data/impressum.html" id="personal_data"></div>
@@ -112,6 +113,12 @@
 	
     
 	<script>includeHTML();</script>
+	<script>
+		var detector = new MobileDetect(window.navigator.userAgent);
+		if (detector.mobile() != null) {
+			confirm("Get web app");
+		}
+	</script>
 
 
 
