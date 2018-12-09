@@ -42,36 +42,52 @@
 
 	<body>
 	
-	<div id="webappblendout"><br>
+	<div id="webappblendout">
 	    <div id="ifwebapp">
-	    	<button id="applink">Zur App für eingefleischte Ranger</button>
+	    	<h5>Für eingefleischte Ranger</h5>
+	    	<p>Hol Dir jetzt die Royal-Rangers-Kiel App!<br>
+	    	Sei immer auf dem neusten Stand und verpasse nie ein Event.</p>
 	    	<div id="webappchoice">
-                <button id="webappyes">Ja</button>
-                <button id="webappnotnow">Nicht jetzt</button>
+                <button id="webappyes">Jetzt zur App</button>
+                <button id="webappnotnow">Vielleicht später</button>
                 <button id="webbappnotremind">Nicht wieder erinnern</button>
 	    	</div>
 	    	<style>
                 #webappblendout{
                     position: fixed;
-                    /*background-color: rgba(50,50,50,0.7);*/
-                    background-color: #000;
-                    widows: 100vw;
+                    background-color: rgba(0,0,0,0.7);
+                    width: 100vw;
                     height: 100vh;
                     display: block; 
                     z-index: 4; 
                     margin: 0;
+                    overflow: hidden;
+                    padding-top: 5vh;
+                }
+                
+                #ifwebapp h5 {
+                    text-align: center;
+                }
+                
+                #ifwebapp p{
+                    text-align: center;
+                    width: 80%;
+                    margin: auto;
+                    font-size: 110%;
+                    
                 }
                 
                 #ifwebapp {
-                    position: static;
+                    position: relative;
                     z-index: 5;
-                    width: 90vw;
-                    height: 80vh;
-                    margin: 5vh 5vw;
+                    width: 90%;
+                    height: 80%;
+                    margin: auto;
                     background-color: #eee;
                     padding: 4px;
                     border-radius: 4px;
                     box-shadow: 0px 0px 15px #000;
+                    padding-top: 20px;
                 }
                 
                 #ifwebapp button {
@@ -80,7 +96,15 @@
                 
                 #ifwebapp #webappchoice {
                     position: absolute;
-                    bottom: 20px;
+                    bottom: 30px;
+                    left: 0px;
+                    right: 0px;
+                    margin: auto;
+                }
+                
+                #ifwebapp #webappchoice button{
+                    margin: auto;
+                    margin-top: 10px;
                 }
             </style>
 	    </div></div>
