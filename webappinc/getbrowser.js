@@ -44,7 +44,7 @@ function getbrowser(){
         browser = "blink";
 
     else
-        browser = "error";
+        //browser = "error";
     
     return browser;
     }

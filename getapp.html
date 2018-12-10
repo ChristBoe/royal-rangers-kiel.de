@@ -7,6 +7,7 @@
     <link rel="manifest" href="manifest.json">
 	<meta name="viewport" content="widh=device-widh, initial-scale=1.0">
     <script src="webappinc/getbrowser.js"></script>
+    <script src="webappinc/browser_detect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
     <script>var detector = new MobileDetect(window.navigator.userAgent);
         
@@ -25,8 +26,8 @@
 
 <p id="kkk"></p>
 <script>
-    var browser = getbrowser();
-    document.getElementById('browsername').innerHTML = navigator.appName;
+    var bbrowser = getbrowser();
+    document.getElementById('browsername').innerHTML = navigator.vendorSub;
     /*if(detector.mobile() != null)
         {
             document.getElementById("ondesktop").style.display = "none";
