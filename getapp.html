@@ -37,13 +37,16 @@
                 tmp = operaminitut;
             
             else if(navigator.userAgent.toLowerCase().search('firefox') >= 0)
-                tmp = 'Für firefox noch nicht verfügbar';
+                tmp = firefoxtut;
             
             else if(navigator.userAgent.toLowerCase().search('samsungbrowser') >= 0)
                 tmp = samsunginternettut;
             
             else if(BrowserDetect.browser.toLowerCase() === 'chrome')
                 tmp = chrometut;
+            
+            else if(1 === 0 /*Mobile Safari*/)
+                tmp = safaritut;
             
             document.getElementById('onmobile').innerHTML = '<h2>App hinzufügen</h2>' + tmp;
             

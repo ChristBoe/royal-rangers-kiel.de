@@ -21,4 +21,13 @@ operaminitut += '<p><h3>Schritt 3</h3><p>Bestätigen Sie das Fenster<img src="we
 var samsunginternettut = '<p><h3>Schritt 1</h3><p>Öffnen Sie das Menü<img src="webappinc/tutpics/samsungInternet/1.png" width="100%"></p></p><br>';
    
 samsunginternettut += '<p><h3>Schritt 2</h3><p>Wählen Sie "Zum Start-bildschirm hinzufühen" aus<img src="webappinc/tutpics/samsungInternet/2.png" width="100%">s</p></p>';
-   
+
+
+
+var safaritut = 'not avalible yet';
+
+
+
+
+
+var firefoxtut = 'Not supported';
