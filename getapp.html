@@ -18,7 +18,6 @@
 
 <body>
     
-    <script>document.write(navigator.userAgent.toLowerCase());</script>
 
 <div id="ondesktop"><p>Sie benutzen einen Desktop-PC. Die Royal-Rangers-Kiel App ist nur auf Mobilgeräten verfügbar</p></div>
 
@@ -35,7 +34,7 @@
             
             document.getElementById('onmobile').innerHTML = '<h2>App hinzufügen</h2>';
             
-            if(navigator.userAgent.toLowerCase().search('opr') >= 0)
+            if(navigator.userAgent.toLowerCase().search('opr') >= 0 || navigator.userAgent.toLowerCase().search('opera') >= 0)
                 document.getElementById('onmobile').innerHTML = operaminitut;
             
             else if(navigator.userAgent.toLowerCase().search('firefox') >= 0)
