@@ -10,34 +10,49 @@
     <!--<script src="webappinc/getbrowser.js"></script>-->
     <script src="webappinc/browser_detect.js"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>-->
+    <script src="webappinc/addToHStut.js"></script>
+    <style>*{font-family: Arial;}</style>
 </head>
 
 
 
 <body>
-<!--ajcnkljn
 
 <div id="ondesktop"><p>Sie benutzen einen Desktop-PC. Die Royal-Rangers-Kiel App ist nur auf Mobilgeräten verfügbar</p></div>
 
-<div id="onmobile"><p id="browsername">abc</p></div>-->
+<div id="onmobile"></div>
+
 
 
 </body>
-</html>
-
-
-<p id="kkk"></p>
 <script>
     if(isMobile.any())
         {
             document.getElementById("ondesktop").style.display = "none";
             document.getElementById("onmobile").style.display = "block";
             
-            document.getElementById("onmobile").innerHTML = BrowserDetect.browser + "<br><br>" + navigator.userAgent + "<br><br>" + navigator.appVersion;
+            var tmp = "Ihr Browser wird nicht unterstützt";
+            
+            if(navigator.userAgent.toLowerCase().search('opr') >= 0)
+                tmp = operaminitut;
+            
+            else if(navigator.userAgent.toLowerCase().search('firefox') >= 0)
+                tmp = 'Für firefox noch nicht verfügbar';
+            
+            else if(navigator.userAgent.toLowerCase().search('samsungbrowser') >= 0)
+                tmp = samsunginternettut;
+            
+            else if(BrowserDetect.browser.toLowerCase() === 'chrome')
+                tmp = chrometut;
+            
+            document.getElementById('onmobile').innerHTML = '<h2>App hinzufügen</h2>' + tmp;
+            
         }
     
     else{
             document.getElementById("ondesktop").style.display = "block";
             document.getElementById("onmobile").style.display = "none";
     }
+    //document.getElementById('onmobile').innerHTML = 'Hallo';
 </script>
+</html>
