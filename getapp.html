@@ -31,24 +31,23 @@
             document.getElementById("ondesktop").style.display = "none";
             document.getElementById("onmobile").style.display = "block";
             
-            var tmp = "Ihr Browser wird nicht unterstützt";
+            document.getElementById('onmobile').innerHTML = '<h2>App hinzufügen</h2>';
             
             if(navigator.userAgent.toLowerCase().search('opr') >= 0)
-                tmp = operaminitut;
+                document.getElementById('onmobile').innerHTML += operaminitut;
             
             else if(navigator.userAgent.toLowerCase().search('firefox') >= 0)
-                tmp = firefoxtut;
+                document.getElementById('onmobile').innerHTML += firefoxtut;
             
             else if(navigator.userAgent.toLowerCase().search('samsungbrowser') >= 0)
-                tmp = samsunginternettut;
+                document.getElementById('onmobile').innerHTML += samsunginternettut;
             
             else if(BrowserDetect.browser.toLowerCase() === 'chrome')
-                tmp = chrometut;
+                document.getElementById('onmobile').innerHTML += chrometut;
             
             else if(1 === 0 /*Mobile Safari*/)
-                tmp = safaritut;
+                document.getElementById('onmobile').innerHTML += safaritut;
             
-            document.getElementById('onmobile').innerHTML = '<h2>App hinzufügen</h2>' + tmp;
             
         }
     
