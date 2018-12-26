@@ -11,13 +11,13 @@
     <script src="webappinc/browser_detect.js"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>-->
     <script src="webappinc/addToHStut.js"></script>
-    <style>*{font-family: Arial;} html {background-color: #f0f0f0; }</style>
+    <style>*{font-family: Arial;} html {background-color: #e0e0e0; }</style>
 </head>
 
 
 
 <body>
-    
+    <script>document.write(navigator.userAgent);</script><br>
 
 <div id="ondesktop"><p>Sie benutzen einen Desktop-PC. Die Royal-Rangers-Kiel App ist nur auf Mobilgeräten verfügbar</p></div>
 
@@ -46,7 +46,7 @@
             else if(BrowserDetect.browser.toLowerCase() === 'chrome')
                 document.getElementById('onmobile').innerHTML += chrometut;
             
-            else if(1 === 0 /*Mobile Safari*/)
+            else if((navigator.userAgent.toLowerCase().search('ipad') >= 0 || navigator.userAgent.toLowerCase().search('iphone') >= 0) && navigator.userAgent.toLowerCase().search('mobile safari') < 0)
                 document.getElementById('onmobile').innerHTML += safaritut;
             
             
