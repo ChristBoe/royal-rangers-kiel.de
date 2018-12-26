@@ -46,8 +46,12 @@
             else if(BrowserDetect.browser.toLowerCase() === 'chrome')
                 document.getElementById('onmobile').innerHTML += chrometut;
             
-            else if((navigator.userAgent.toLowerCase().search('ipad') >= 0 || navigator.userAgent.toLowerCase().search('iphone') >= 0) && navigator.userAgent.toLowerCase().search('mobile safari') < 0)
+            else if(navigator.userAgent.toLowerCase().search('iphone') >= 0 && navigator.userAgent.toLowerCase().search('mobile safari') < 0)
                 document.getElementById('onmobile').innerHTML += safaritut;
+            
+            
+            else if(navigator.userAgent.toLowerCase().search('ipad') >= 0 && navigator.userAgent.toLowerCase().search('mobile safari') < 0)
+                document.getElementById('onmobile').innerHTML += safaritutipad;
             
             
         }

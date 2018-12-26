@@ -33,6 +33,12 @@ safaritut += '<p><h3>Schritt 3</h3><p>Bestätigen Sie das Fenster<img src="webap
 
 
 
+var safaritutipad = '<p><h3>Schritt 1</h3><p>Öffnen Sie das Menü<img src="webappinc/tutpics/safariipad/1.png" width="100%"></p></p><br>';
+
+safaritutipad += '<p><h3>Schritt 2</h3><p>Wählen Sie "Zu Home-Bildschirm" aus<img src="webappinc/tutpics/safariipad/2.png"width="100%"></p></p><br>';
+
+safaritutipad += '<p><h3>Schritt 3</h3><p>Bestätigen Sie das Fenster<img src="webappinc/tutpics/safariipad/3.png" width="100%"></p></p>';
+
 
 
 var firefoxtut = 'Not supported';
