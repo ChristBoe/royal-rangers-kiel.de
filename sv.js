@@ -34,7 +34,7 @@ const RUNTIME = 'runtime';
     'assets/512x512.png',
     'assets/favicon.ico'
 
-];*/
+];
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -42,7 +42,7 @@ self.addEventListener('install', event => {
       .then(cache => cache.addAll(PRECACHE_URLS))
       .then(self.skipWaiting())
   );
-});
+});*/
 
 self.addEventListener('activate', event => {
   const currentCaches = [PRECACHE, RUNTIME];
