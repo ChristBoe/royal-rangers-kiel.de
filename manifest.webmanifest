@@ -1,6 +1,7 @@
 {
   "short_name": "RR104",
   "name": "Royal Rangers Kiel",
+  "display": "standalone",
   "description": "tst",
   "icons": [
         {
@@ -16,7 +17,6 @@
     ],
     "start_url": "https://rr104.github.io/royal-rangers-kiel.de/webapp.html", 
   "background_color": "#5a6839",
-  "display": "standalone",
   "theme_color": "#5a6839",
     "scope": "/royal-rangers-kiel.de/webapp.html"
 }
