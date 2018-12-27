@@ -4,11 +4,6 @@
   "description": "tst",
   "icons": [
         {
-            "src": "icons/icon-128.png",
-            "sizes": "128x128",
-            "type": "image/png"
-        },
-        {
             "src": "icons/icon-168.png",
             "sizes": "168x168",
             "type": "image/png"
