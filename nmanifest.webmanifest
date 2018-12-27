@@ -1,8 +1,8 @@
 {
-    "name": "js13kGames Progressive Web App",
-    "short_name": "js13kPWA",
-    "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
-    "icons": [
+   "short_name": "RR104",
+  "name": "Royal Rangers Kiel",
+  "description": "tst",
+  "icons": [
         {
             "src": "icons/icon-32.png",
             "sizes": "32x32",
