@@ -39,12 +39,12 @@
             "type": "image/png"
         },
         {
-            "src": "icons/icon-512.png",
+            "src": "https://royal-rangers-kiel.de/logo/512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "start_url": "https://rr104.github.io/royal-rangers-kiel.de/",
+    "start_url": "https://rr104.github.io/royal-rangers-kiel.de/", 
   "background_color": "#5a6839",
   "display": "standalone",
   "theme_color": "#5a6839",
