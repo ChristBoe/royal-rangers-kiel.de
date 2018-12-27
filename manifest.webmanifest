@@ -4,11 +4,6 @@
   "description": "tst",
   "icons": [
         {
-            "src": "icons/icon-168.png",
-            "sizes": "168x168",
-            "type": "image/png"
-        },
-        {
             "src": "https://royal-rangers-kiel.de/logo/192x192.png",
             "sizes": "192x192",
             "type": "image/png"
