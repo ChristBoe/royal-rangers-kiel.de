@@ -3,12 +3,6 @@
   "name": "Royal Rangers Kiel",
   "description": "tst",
   "icons": [
-        
-        {
-            "src": "icons/icon-64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-        },
         {
             "src": "icons/icon-96.png",
             "sizes": "96x96",
