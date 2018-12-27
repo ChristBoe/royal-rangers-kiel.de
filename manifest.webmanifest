@@ -3,18 +3,48 @@
   "name": "Royal Rangers Kiel",
   "description": "tst",
   "icons": [
-    {
-      "src": "https://royal-rangers-kiel.de/logo/192x192.png",
-      "type": "image/png",
-        "sizes" : "192x192"
-    },
-     {
-      "src": "https://royal-rangers-kiel.de/logo/512x512.png",
-      "type": "image/png",
-        "sizes" : "512x512"
-    } 
-      
-  ],
+ "icons": [
+        {
+            "src": "icons/icon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-168.png",
+            "sizes": "168x168",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
   "start_url": "https://rr104.github.io/royal-rangers-kiel.de/webapp.html",
   "background_color": "#5a6839",
   "display": "standalone",
