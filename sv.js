@@ -14,12 +14,12 @@
 const PRECACHE = 'precache-v1';
 const RUNTIME = 'runtime';
 
-/*const PRECACHE_URLS = [
+const PRECACHE_URLS = [
     '/',
     // html file
     'index.html',
     // html manifest pointer
-    'index.html?homescreen=1',
+    /*'index.html?homescreen=1',
     '?homescreen=1',
     // css file
     'styles/index.min.css',
@@ -32,7 +32,7 @@ const RUNTIME = 'runtime';
     // assets
     'assets/copy.svg',
     'assets/512x512.png',
-    'assets/favicon.ico'
+    'assets/favicon.ico'*/
 
 ];
 
@@ -42,7 +42,7 @@ self.addEventListener('install', event => {
       .then(cache => cache.addAll(PRECACHE_URLS))
       .then(self.skipWaiting())
   );
-});*/
+});
 
 self.addEventListener('activate', event => {
   const currentCaches = [PRECACHE, RUNTIME];
