@@ -9,10 +9,11 @@ function arrayToCards(tableData) {
 
 		// team image
 		var team_image = $('<img class="card-img-top" src="' + rowData[4] + '" alt="Team Animal Foto from Wikipedia"></div>'); 
+		console.log(rowData[4]);
 		card.append(team_image);
 
 		// image overlay
-		var image_copyright = $('<div class="card-img-overlay"><a href="' + rowData[6] + '">&copy; ' + rowData[5] + '</a></div>')
+		var image_copyright = $('<div class="card-img-overlay"><a href="' + rowData[6] + '">&copy; ' + rowData[5] + '</a></div>');
 		card.append(image_copyright);
 
 		// prepare card body
