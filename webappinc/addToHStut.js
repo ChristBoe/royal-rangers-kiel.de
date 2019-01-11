@@ -1,7 +1,7 @@
-var chrometut = '<p><h3>Schritt 1</h3> <p>Öffnen Sie das Menü <img src="webappinc/tutpics/chrome/1.png" width="100%"> </p></p>  <br>';
+﻿var chrometut = '<p><h3>Schritt 1</h3> <p>Öffnen Sie das Menü <img src="webappinc/tutpics/chrome/1.png" width="100%"> </p></p>  <br>';
 
 chrometut += '<p><p><h3>Schritt 2</h3><p>Wählen Sie "Zum Startbildschirm hinzufügen" aus<img src="webappinc/tutpics/chrome/2.png"width="100%"></p></p><br>';
-chrometut += '<p><p><h3>Schritt 2</h3><p>Wählen Sie "Zum Startbildschirm hinzufügen" aus<img src="webappinc/tutpics/chrome/2.png"width="100%"></p></p><br>';
+
 
 chrometut += '<p><p><h3>Schritt 3</h3><p>Bestätigen Sie das Fenster<img src="webappinc/tutpics/chrome/3.png" width="100%"></p></p>';
 
@@ -41,4 +41,4 @@ safaritutipad += '<p><h3>Schritt 3</h3><p>Bestätigen Sie das Fenster<img src="w
 
 
 
-var firefoxtut = 'Not supported';
+var firefoxtut = '<img src="https://www.androidpolice.com/wp-content/uploads/2017/10/nexus2cee_firefox-pwa-hero.png" widh="100%">';
