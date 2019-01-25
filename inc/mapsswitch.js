@@ -3,8 +3,10 @@ function switchtohassee()
 			"use strict";
             
 			document.getElementById('tablinkshassee').style.outline = 'none';
-			document.getElementById('elmschenhagen').style.display = 'none';
-			document.getElementById('hassee').style.display = 'block';
+			if(document.getElementById('elmschenhagen')){
+			document.getElementById('elmschenhagen').style.display = 'none';}
+			if(document.getElementById('hassee')){
+			document.getElementById('hassee').style.display = 'block';}
 			document.getElementById('tablinkshassee').style.background = '#ccc';
 			document.getElementById('tablinkseh').style.background = '#e0e0e0';
 			document.getElementById('tablinkshassee').style.borderStyle = "inset";
