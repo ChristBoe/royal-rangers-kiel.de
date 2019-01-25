@@ -1,5 +1,6 @@
 function switchtohassee()
 		{
+			"use strict";
             
 			document.getElementById('tablinkshassee').style.outline = 'none';
 			document.getElementById('elmschenhagen').style.display = 'none';
@@ -16,6 +17,8 @@ function switchtohassee()
 
 		function switchtoeh()
 		{
+			"use strict";
+			
 			document.getElementById('tablinkseh').style.outline = 'none';
 			document.getElementById('hassee').style.display = 'none';
 			document.getElementById('elmschenhagen').style.display = 'block';
