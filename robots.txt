@@ -1,9 +1,9 @@
 # robots.txt zu http://www.royal-rangers-kiel.de/
 
 User-agent: *
-Disallow: /data
-Disallow: /inc
-Disallow: /webappinc
+Disallow: /data/
+Disallow: /inc/
+Disallow: /webappinc/
 Disallow: /404.html
 Disallow: /404-512.png
 Disallow: /getapp.html
