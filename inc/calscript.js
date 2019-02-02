@@ -15,7 +15,9 @@ console.log(h);
 if(w > h)
 	{
 		document.getElementById('calendarobject').data = month;
+		document.getElementById('calendarobject').style.height = "80vh";
 	}
 else{
 	document.getElementById('calendarobject').data = terminübersicht;
+	document.getElementById('calendarobject').style.height = "80vmax";
 }
